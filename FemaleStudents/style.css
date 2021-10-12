@@ -9,9 +9,6 @@
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
-  /* --bs-body-navbarBgColor: rgb(39, 39, 39); */
-  /* --bs-body-invitationTitleFontSize: 35px; */
-  /* use var(--bs-body-navbarFontSize) instead of 30px */
 }
 
 /* ----------------- BODY STYLING ------------------ */
@@ -28,6 +25,7 @@ body {
   height: 100vh;
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
 .navbar {
   padding: 4vh 0px;
@@ -54,11 +52,12 @@ body {
   font-size: 9vh;
 }
 #firstPageFooter {
-  font-size: 2vh;
+  font-size: 1.5vw;
+  position: fixed;
+  z-index: 1;
   font-weight: 550;
   color: black;
-  display: flex;
-  justify-content: center;
+  left: 30vw;
 }
 
 /* -------------- SECOND PAGE STYLING --------------- */
@@ -66,8 +65,11 @@ body {
   display: flex;
   align-items: center;
   margin: 0px 5vw;
-  min-height: 70vh;
+  min-height: 80vh;
   font-size: 2vh;
+  position: relative;
+  z-index: 2;
+  background-color: white;
 }
 #invitationImage {
   width: 55%;
@@ -86,7 +88,7 @@ body {
 .incentivesContainer {
   display: flex;
   align-items: center;
-  background-image: url("./subfooter1.jpg");
+  background-image: url("./Images/incentives.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,6 +96,8 @@ body {
   color: black;
   min-height: 30vh;
   font-size: 2.5vh;
+  position: relative;
+  z-index: 2;
 }
 #incentives {
   padding: 2vh 3vw;
@@ -105,6 +109,9 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   padding: 5vh 0vh;
+  position: relative;
+  z-index: 2;
+  background-color: white;
 }
 #thirdPageTitle {
   padding: 0vh 7%;
@@ -116,8 +123,9 @@ body {
 /* ----- -SLIDING CARDS TEMPELATE----- */
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1600px;
+  max-width: 1200px;
   position: relative;
+  padding: 0px 10vw;
   margin: auto;
 }
 /* Hide the images by default */
@@ -143,7 +151,7 @@ body {
 }
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 10vw;
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
@@ -199,7 +207,6 @@ body {
   min-height: 70vh;
   justify-content: flex-end;
   padding-right: 6vw;
-  margin: 0px 10vw;
   background-color: #1a1b1f;
   border-radius: 5px;
   color: #f9f9f9;
@@ -215,10 +222,14 @@ body {
   line-height: 1.2;
 }
 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*--------------- FOOTER STYLING -----------*/
 footer {
   background-color: #1a1b1f;
   margin: 0px;
+  position: relative;
+  z-index: 2;
+  display: none;
 }
 .footer-main .container .row {
   display: flex;
@@ -226,8 +237,77 @@ footer {
   height: 300px;
   /* font-size: 40px; */
 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-/* if container of x is having property display flex then we can use below properties
-for y which is present in x 
-margin-top: auto;
-margin-bottom: auto; */
+@media screen and (min-width: 950px) {
+  #firstPageText {
+    font-size: 2.9vh;
+  }
+  .card-wrapper {
+    padding-left: 15vw;
+  }
+  #firstPageFooter {
+    font-size: 2vw;
+    left: 22vw;
+    margin-bottom: 2vh;
+  }
+  .secondPage {
+    font-size: 2.3vh;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #invitationImage {
+    border-radius: 1rem;
+    width: 60vw;
+  }
+  .secondPage {
+    display: block;
+    padding: 5vh 0vw;
+    font-size: 2.1vh;
+  }
+  #invitationImage {
+    border-radius: 1rem;
+    width: 45vw;
+    height: 40vw;
+  }
+  #invitation {
+    margin-top: 2vh;
+    margin-left: 6vw;
+  }
+}
+@media screen and (max-width: 950px) {
+  #firstPageText {
+    font-size: 2.3vh;
+  }
+  #firstPageFooter {
+    font-size: 2vw;
+    left: 22vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  #firstPageFooter {
+    font-size: 2.5vw;
+    left: 15vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  #firstPageFooter {
+    font-size: 2.7vw;
+    left: 12vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .secondPage {
+    font-size: 1.8vh;
+  }
+}
+/* {
+  --bs-body-navbarBgColor: rgb(39, 39, 39);
+  --bs-body-invitationTitleFontSize: 35px;
+  use var(--bs-body-navbarFontSize) instead of 30px
+  
+  if container of x is having property display flex then we can use below properties
+  for y which is present in x 
+  margin-top: auto;
+  margin-bottom: auto;
+} */
