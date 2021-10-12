@@ -58,106 +58,130 @@
   --bs-body-bg: #fff;
   --bs-body-marginleft: 10%;
   --bs-body-marginright: 10%;
-  --bs-body-navbarFontSize:30px;
+  --bs-body-navbarFontSize: 30px;
   --bs-body-navbarFontWeight: 550;
   --bs-body-navbarBgColor: rgb(39, 39, 39);
   --bs-body-navbarVerticalPadding: 10px;
   --bs-body-navbarHorizontalPadding: 0px;
   --bs-body-invitationTitleFontWeight: 600;
   --bs-body-invitationTitleFontSize: 35px;
+  /*use var(--bs-body-navbarFontSize) instead of 30px*/
 }
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  font-size: var(--bs-body-font-size);
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.1rem;
 }
 
-.containerBody {
+#firstPageFooter {
+  color: black;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+.secondPage {
   margin-left: var(--bs-body-marginleft);
   margin-right: var(--bs-body-marginright);
+  height: 80vh;
 }
 
-/*--------------- NAVBAR STYLING -------------*/
+/* -------------- FIRST PAGE STYLING --------------- */
+.firstPage {
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
 .navbar {
-  padding: var(--bs-body-navbarVerticalPadding)
-    var(--bs-body-navbarHorizontalPadding);
-  background-color: var(--bs-body-navbarBgColor);
-  font-size: var(--bs-body-navbarFontSize);
-  font-weight: var(--bs-body-navbarFontWeight);
+  padding:30px 0px;
+  font-size: 30px;
+  /* font-weight: 600; */
 }
 #navbarContent {
-  padding-left: 10px;
-  color: white;
-}
-
-/*--------------- FOOTER STYLING -----------*/
-.footer {
-  font-weight: var(--bs-body-navbarFontWeight);
-  font-size: var(--bs-body-navbarFontSize);
-  margin-top: 100px;
-  display: block;
-  padding: 0px 0px 5px 0px;
-  /* background-image: url("subfooter.jpg"); */
-  /* background: green url("subfooter.jpg") right no-repeat; */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.555), rgba(255, 255, 255, 0.5)), url(subfooter.jpg) repeat;
-}
-#footerContent {
-  height: 300px;
-  font-size: 40px;
+  padding-left: 7%;
   color: black;
 }
-
-/* --------------TOP TEXT STYLING ----------------- */
-#Text {
-  margin: 0px;
-  padding: 30px 0px 30px 0px;
+#firstPageContent{
+  height: 100vh;
+}
+#firstPageText{
+  /* display: flex; */
+  height: 80vh;
+  /* align-items: flex-end; */
+  align-self: middle;
+  padding: 10px 5%;
+}
+#firstPageFooter{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* height: 75%; */
 }
 
-/*-------------- INVITATION STYLING ---------------*/
-.container-flex {
-  margin-top: 25px;
+/* -------------- SECOND PAGE STYLING --------------- */
+.secondPage {
   display: flex;
+  align-items: center;
 }
 /*Invitation left side*/
-#image {
+#invitationImage {
   width: 55%;
   height: 450px;
   margin-top: auto;
   margin-bottom: auto;
 }
 /*Invitation right side*/
+#invitationTitle {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 #invitation {
   margin-left: 50px;
-  margin-top: 0px;
-}
-#invitationTitle {
-  font-size: var(--bs-body-invitationTitleFontSize);
-  font-weight: var(--bs-body-invitationTitleFontWeight);
-}
-#invitationText {
-  margin: 10px 0px;
+  margin-top: 10px;
 }
 
 /*--------------- INCENTIVES STYLING --------------*/
 .incentivesContainer {
-  background-color: rgba(0, 0, 0, 0.739);
-  margin: 50px 10%;
-  color: white;
-  border-radius: 1rem;
+  /* height: 300px; */
+  min-height: 300px;
+  background-image: url("./subfooter1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 80%;
+  color: black;
+  font-size: 25px;
 }
 #incentives {
-  padding: 30px 30px;
+  padding: 40px 30px;
+  text-align: center;
+  padding: auto auto;
+  margin: auto auto;
 }
+
+
+/*--------------- FOOTER STYLING -----------*/
+footer {
+  background-color: #1a1b1f;
+  margin: 0px;
+}
+.footer-main .container .row {
+  display: flex;
+  padding: 20px 10%;
+  height: 300px;
+  /* font-size: 40px; */
+}
+
 
 /* --------------- EXPERIENCES STYLING ----------- */
 #facultyExperiences {
   box-sizing: border-box;
 }
 #experiencesTitle {
-  padding-left: 20px;
+  padding-left: 10%;
   padding-top: 80px;
   width: 70%;
   font-size: 50px;
@@ -249,20 +273,6 @@ body {
   display: flex;
   min-height: 500px;
   justify-content: flex-end;
-}
-.card-left {
-  position: absolute;
-  left: -5%;
-  top: 20%;
-  right: auto;
-  bottom: 0%;
-  width: 35%;
-  height: 0px;
-  min-height: 440px;
-  border-radius: 5px;
-  background-image: url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fe3910db4fde2e69f396_christiann-koepke-dQyS2pMYtok-unsplash%20(1).jpg");
-  background-position: 70% 80%;
-  background-size: 270%;
 }
 .card-right {
   display: flex;
