@@ -1,10 +1,15 @@
 const [red, green, blue] = [255, 255, 255];
 const section1 = document.querySelector('.firstPage');
+const section1text = document.querySelector('#firstPageText');
+const section1footer = document.querySelector('#firstPageFooter');
 
 window.addEventListener('scroll', () => {
   const y = 1 + (window.scrollY || window.pageYOffset) / 150;
   const [r, g, b] = [red/y, green/y, blue/y].map(Math.round);
+  const [fr,fg,fb] = [255-red/y, 255 - green/y, 255 - blue/y];
   section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  section1.style.color = `rgb(${fr}, ${fg}, ${fb})`;
+  section1footer.style.transform = `scale(${1-(y-1)/5})`;
 });
 
 var slideIndex = 1;
