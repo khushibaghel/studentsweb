@@ -41,7 +41,7 @@ body {
   font-weight: 500;
 }
 /* -------------- NAVBAR STYLING --------------- */
-.navbar {
+/* .navbar {
   padding: 0.5rem 10px 0.5rem 5px;
   font-size: 17px;
   display: flex;
@@ -78,7 +78,7 @@ body {
   position: fixed;
   top: 0;
   width: 99.2%;
-}
+} */
 
 /* -------------- FIRST PAGE STYLING --------------- */
 .firstPage {
@@ -164,20 +164,20 @@ body {
 #thirdPageTitle {
   padding: 0vh 7%;
   padding-bottom: 5vh;
-  font-size: 4vh;
-  font-weight: 600;
+  font-size: 5vh;
+  font-weight: 350;
 }
 
 /* ----- -SLIDING CARDS TEMPELATE----- */
 /* Slideshow container */
-.slideshow-container {
+.slide_cards {
   max-width: 1200px;
   position: relative;
   padding: 0px 10vw;
   margin: auto;
 }
 /* Hide the images by default */
-.mySlides {
+.mycards {
   display: none;
 }
 /* Next & previous buttons */
@@ -272,7 +272,7 @@ body {
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /*--------------- FOOTER STYLING -----------*/
-footer {
+/* footer {
   background-color: #1a1b1f;
   margin: 0px;
   position: relative;
@@ -283,8 +283,8 @@ footer {
   display: flex;
   padding: 20px 10%;
   height: 300px;
-  /* font-size: 40px; */
-}
+  /* font-size: 40px; *
+} */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media screen and (min-width: 950px) {
   .navbarLeft .icon{
