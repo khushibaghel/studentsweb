@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ForGirlChild</title>
+    <title>For Girl Child | IIT Mandi</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./Images/iittrans.png"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="firstPage">
-      <!-- NAVBAR -->
-      <div class="navbar">
-        <div id="navbarContent">Navbar</div>
+      <!-- HEADER -->
+      <div class="header">
+        <img src="./Images/iittrans.png" id="iitMandiLogo" alt="" />
+        <p id="headerText">INDIAN INSTITUTE OF TECHNOLOGY MANDI</p>
       </div>
+      <!-- NAVBAR -->
+      <div class="navbar" id="nav">
+        <div class="navbarLeft" id="navLeft">
+          <a href="#" id="home">HOME</a>
+          <a class="icon" onclick="expandNavbar()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="navbarRight" id="navRight">
+          <a href="#">UG</a>
+          <a href="#">PG</a>
+          <a href="#">STUDENT GYMKHANA</a>
+          <a href="#">INTERNATIONAL</a>
+          <a href="#">ALUMNI</a>
+          <a href="#">CONTACT US</a>
+        </div>
+      </div>
+
       <div id="firstPageContent">
         <div id="firstPageSpace">
           <div id="firstPageText">
-            <div id="bigText">IIT <span>Mandi</span></div>
+            <div id="bigText">Specially for <span>Female Students</span></div>
             <p>
               Engineering and Scientific programmes are designed to shape
               professionals dedicated to developing solutions for the problems
@@ -52,7 +81,7 @@
     </div>
 
     <!-- SPECIAL INCENTIVES -->
-    <div class="incentivesContainer">
+    <div id="incentivesContainer">
       <div id="incentives">
         <b>Special incentives:</b> All female BTech students will get a merit
         scholarship including full tuition fee waiver and Rs. 1,000/- per month
