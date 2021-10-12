@@ -58,7 +58,7 @@
   --bs-body-bg: #fff;
   --bs-body-marginleft: 10%;
   --bs-body-marginright: 10%;
-  --bs-body-navbarFontSize: 25px;
+  --bs-body-navbarFontSize:30px;
   --bs-body-navbarFontWeight: 550;
   --bs-body-navbarBgColor: rgb(39, 39, 39);
   --bs-body-navbarVerticalPadding: 10px;
@@ -74,34 +74,61 @@ body {
   line-height: var(--bs-body-line-height);
   font-size: var(--bs-body-font-size);
 }
+
+.containerBody {
+  margin-left: var(--bs-body-marginleft);
+  margin-right: var(--bs-body-marginright);
+}
+
+/*--------------- NAVBAR STYLING -------------*/
 .navbar {
   padding: var(--bs-body-navbarVerticalPadding)
     var(--bs-body-navbarHorizontalPadding);
   background-color: var(--bs-body-navbarBgColor);
   font-size: var(--bs-body-navbarFontSize);
-  display: flex;
   font-weight: var(--bs-body-navbarFontWeight);
 }
-#logo, .containerBody {
-  margin-left: var(--bs-body-marginleft);
-  margin-right: var(--bs-body-marginright);
+#navbarContent {
+  padding-left: 10px;
+  color: white;
 }
+
+/*--------------- FOOTER STYLING -----------*/
+.footer {
+  font-weight: var(--bs-body-navbarFontWeight);
+  font-size: var(--bs-body-navbarFontSize);
+  margin-top: 100px;
+  display: block;
+  padding: 0px 0px 5px 0px;
+  /* background-image: url("subfooter.jpg"); */
+  /* background: green url("subfooter.jpg") right no-repeat; */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.555), rgba(255, 255, 255, 0.5)), url(subfooter.jpg) repeat;
+}
+#footerContent {
+  height: 300px;
+  font-size: 40px;
+  color: black;
+}
+
+/* --------------TOP TEXT STYLING ----------------- */
 #Text {
-  margin: 30px 0px;
+  margin: 0px;
+  padding: 30px 0px 30px 0px;
 }
-#logo {
-  color: var(--bs-white);
-}
+
+/*-------------- INVITATION STYLING ---------------*/
 .container-flex {
   margin-top: 25px;
   display: flex;
 }
+/*Invitation left side*/
 #image {
   width: 55%;
-  height: 300px;
+  height: 450px;
   margin-top: auto;
   margin-bottom: auto;
 }
+/*Invitation right side*/
 #invitation {
   margin-left: 50px;
   margin-top: 0px;
@@ -114,29 +141,116 @@ body {
   margin: 10px 0px;
 }
 
-.container {
-  background-color: rgb(108 117 125);
+/*--------------- INCENTIVES STYLING --------------*/
+.incentivesContainer {
+  background-color: rgba(0, 0, 0, 0.739);
   margin: 50px 10%;
   color: white;
   border-radius: 1rem;
-  /* padding: 50px; */
-  /* height: 300px; */
 }
 #incentives {
   padding: 30px 30px;
-  /* margin-top: 70px; */
-  /* margin-bottom: auto; */
 }
 
-.shop-local-wrapper {
+/* --------------- EXPERIENCES STYLING ----------- */
+#facultyExperiences {
+  box-sizing: border-box;
+}
+#experiencesTitle {
+  padding-left: 20px;
+  padding-top: 80px;
+  width: 70%;
+  font-size: 50px;
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1600px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(153, 153, 153, 0.8);
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* The dots/bullets/indicators */
+#dots {
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*--------------- EXPERIENCES CARD STYLING -------------*/
+.card-wrapper {
   position: relative;
   display: flex;
-  margin: 0px 0px 50px 0px;
   min-height: 500px;
   justify-content: flex-end;
 }
-
-.shop-local-left {
+.card-left {
   position: absolute;
   left: -5%;
   top: 20%;
@@ -150,8 +264,7 @@ body {
   background-position: 70% 80%;
   background-size: 270%;
 }
-
-.shop-local-right {
+.card-right {
   display: flex;
   width: 80%;
   padding: 25px;
@@ -159,14 +272,12 @@ body {
   background-color: #222;
   color: #f9f9f9;
 }
-
-.shop-local-content-wrapper {
+.card-content-wrapper {
   width: 90%;
   padding-right: 40px;
   padding-left: 145px;
 }
-
-.shop-local-heading {
+.card-heading {
   margin-top: 0px;
   font-size: 45px;
   line-height: 1.2;
