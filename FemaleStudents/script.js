@@ -1,40 +1,3 @@
-//----------------------- NAVBAR --------------------------------
-window.onscroll = function () {
-    myFunction();
-  };
-var navbar = document.getElementById("nav");
-var navRight = document.getElementById("navRight");
-var sticky = navbar.offsetTop;
-var firstPageSpace = document.getElementById("firstPageSpace");
-var responsive = false;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    navbar.style.backgroundColor = "#2e7eed";
-    firstPageSpace.style.height = "81.3vh";
-  } else {
-    navbar.style.backgroundColor = "#f1f1f177";
-    navbar.classList.remove("sticky");
-    firstPageSpace.style.height = "75vh";
-  }
-}
-function expandNavbar() {
-  if (responsive) {
-    navbar.classList.remove("navbarResponsive");
-    navRight.classList.remove("navRightResponsive");
-    if (!navbar.classList.contains("sticky"))
-      firstPageSpace.style.height = "75vh";
-      responsive = false;
-  } else {
-    navbar.className += " navbarResponsive";
-    navRight.className += " navRightResponsive";
-    if (!navbar.classList.contains("sticky"))
-    firstPageSpace.style.height = "81.3vh";
-    responsive = true;
-  }
-}
-// ------------------------------------------------------------------
 
 // ---------------------- FIRST PAGE -------------------------
 const [red, green, blue] = [255, 255, 255];
@@ -48,7 +11,11 @@ window.addEventListener("scroll", () => {
   const [fr, fg, fb] = [255 - red / y, 255 - green / y, 255 - blue / y];
   section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   section1.style.color = `rgb(${fr}, ${fg}, ${fb})`;
-  // section1footer.style.transform = `scale(${1 - (y - 1) / 5})`;
+  const scale=1 - (y - 1) / 5;
+  if(scale<=0)
+  section1footer.style.transform = `scale(${0})`;
+  else
+  section1footer.style.transform = `scale(${1})`;
 });
 // ------------------------------------------------------------------
 
@@ -67,7 +34,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("mycards");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
