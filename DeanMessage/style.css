@@ -92,7 +92,7 @@
   margin: 20px;
   position: absolute;
   left: 7.2%;
-  top: 63%;
+  top: 69%;
   right: auto;
   bottom: 0%;
   width: 20%;
@@ -102,4 +102,241 @@
   text-align: center;
   }
   
+  @media screen and (max-width: 1900px) {
+    .box {
+      top: 69%;
+      width: 310px;
+      left: 7%;
+    }
+  }
+
+    @media screen and (max-width: 1160px) {
+    .box {
+      top: 70%;
+      width: 310px;
+      left: 5%;
+    }
+  }
+
+  @media screen and (max-width: 1135px) {
+  
+    .local-left {
+      top: 8%;
+      left: 0%;
+    }
+    .local-right{
+      width: 50%;
+     padding: 5px;
+     justify-content: end;
+    }
+    .local-content-wrapper {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .local-heading {
+      margin-top: 0px;
+    }
+    .box {
+      top: 75%;
+      width: 310px;
+      left: 2%;
+    }
+
+  }
+
+  @media screen and (max-width: 960px) {
+    .local-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .local-wrapper {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .local-left {
+      position: static;
+      width: 100%;
+      border-radius: 0px;
+      left: 7%;
+    }
+    .local-right {
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 0px;
+    }
+    .box {
+      top: 15%;
+      width: 310px;
+      left: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 890px) {
+    .local-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .local-wrapper {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .local-left {
+      position: static;
+      width: 100%;
+      border-radius: 0px;
+      left: 7%;
+    }
+    .local-right {
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 0px;
+    }
+    .box {
+      top: 15%;
+      width: 310px;
+      left: 50%;
+    }
+    h1{
+      font-size:30px;
+      text-align: left;
+      padding-left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    .local-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .local-wrapper {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .local-left {
+      position: static;
+      width: 100%;
+      border-radius: 0px;
+      left: 7%;
+    }
+    .local-right {
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 0px;
+    }
+    .box {
+      top: 15%;
+      width: 230px;
+      right: 0%;
+      left: 57%;
+    }
+    h1{
+      font-size:30px;
+      text-align: left;
+      padding-left: 0%;
+    }
+  }
+
+    @media screen and (max-width: 580px) {
+    .local-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .local-wrapper {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .local-left {
+      position: static;
+      width: 100%;
+      border-radius: 0px;
+      left: 7%;
+    }
+    .local-right {
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 0px;
+    }
+    .box {
+      top: 50%;
+      width: 220px;
+      right: 0%;
+      left: 11%;
+    }
+    h1{
+      font-size:30px;
+      text-align: left;
+      padding-left: 0%;
+    }
+  }
+
+      @media screen and (max-width: 513px) {
+    .local-container {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .local-wrapper {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .local-left {
+      position: static;
+      width: 100%;
+      border-radius: 0px;
+      left: 7%;
+    }
+    .local-right {
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 0px;
+    }
+    .box {
+      top: 60%;
+      width: 220px;
+      right: 0%;
+      left: 11%;
+    }
+    h1{
+      font-size:25px;
+      text-align: left;
+      padding-left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .local-section {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .local-right {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .box {
+      top: 50%;
+      width: 220px;
+      right: 0%;
+      left: 11%;
+    }
+
+  }
   
