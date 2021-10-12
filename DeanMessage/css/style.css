@@ -18,10 +18,23 @@
     color: black; 
     font-weight: 400;
     size: 30px;
- 
+    background-image: url("../images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: image 60s infinite alternate-reverse;
   }
 
- 
+  @keyframes image {
+  0% {
+    background-image: url("../images/3.jpg");
+  }
+  50% {
+    background-image: url("../images/4.jpg");
+  }
+  100% {
+    background-image: url("../images/5.jpg");
+  }
+}
 
  
 .navbar-toggler-icon {
