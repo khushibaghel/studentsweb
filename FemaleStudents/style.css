@@ -1,45 +1,4 @@
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
-  --bs-body-rgb: 33, 37, 41;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -50,42 +9,18 @@
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-size: 1.1rem;
-  --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
-  --bs-body-marginleft: 10%;
-  --bs-body-marginright: 10%;
-  --bs-body-navbarFontSize: 30px;
-  --bs-body-navbarFontWeight: 550;
-  --bs-body-navbarBgColor: rgb(39, 39, 39);
-  --bs-body-navbarVerticalPadding: 10px;
-  --bs-body-navbarHorizontalPadding: 0px;
-  --bs-body-invitationTitleFontWeight: 600;
-  --bs-body-invitationTitleFontSize: 35px;
-  /*use var(--bs-body-navbarFontSize) instead of 30px*/
+  /* --bs-body-navbarBgColor: rgb(39, 39, 39); */
+  /* --bs-body-invitationTitleFontSize: 35px; */
+  /* use var(--bs-body-navbarFontSize) instead of 30px */
 }
 
+/* ----------------- BODY STYLING ------------------ */
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-weight: 400;
   line-height: 1.5;
   font-size: 1.1rem;
-}
-
-#firstPageFooter {
-  color: black;
-  margin-top: auto;
-  margin-bottom: 0px;
-}
-
-.secondPage {
-  margin-left: var(--bs-body-marginleft);
-  margin-right: var(--bs-body-marginright);
-  height: 80vh;
 }
 
 /* -------------- FIRST PAGE STYLING --------------- */
@@ -95,99 +30,90 @@ body {
   overflow: hidden;
 }
 .navbar {
-  padding:30px 0px;
-  font-size: 30px;
-  /* font-weight: 600; */
+  padding: 4vh 0px;
+  font-size: 4vh;
 }
 #navbarContent {
   padding-left: 7%;
   color: black;
 }
-#firstPageContent{
-  height: 100vh;
+#firstPageContent {
+  height: 88vh;
 }
-#firstPageText{
-  /* display: flex; */
-  height: 80vh;
-  /* align-items: flex-end; */
-  align-self: middle;
-  padding: 10px 5%;
+/* ----------------------- */
+#firstPageSpace {
+  display: flex;
+  height: 75vh;
+  align-items: flex-end;
 }
-#firstPageFooter{
+#firstPageText {
+  padding: 1vh 5%;
+  font-size: 2vh;
+}
+#firstPageText #bigText {
+  font-size: 9vh;
+}
+#firstPageFooter {
+  font-size: 2vh;
+  font-weight: 550;
+  color: black;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  /* height: 75%; */
 }
 
 /* -------------- SECOND PAGE STYLING --------------- */
 .secondPage {
   display: flex;
   align-items: center;
+  margin: 0px 5vw;
+  min-height: 70vh;
+  font-size: 2vh;
 }
-/*Invitation left side*/
 #invitationImage {
   width: 55%;
-  height: 450px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-/*Invitation right side*/
-#invitationTitle {
-  font-size: 35px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  height: 40vh;
 }
 #invitation {
-  margin-left: 50px;
-  margin-top: 10px;
+  margin: 1.5vh 3vw;
+}
+#invitationTitle {
+  font-size: 4vh;
+  font-weight: 600;
+  margin-bottom: 1vh;
 }
 
 /*--------------- INCENTIVES STYLING --------------*/
 .incentivesContainer {
-  /* height: 300px; */
-  min-height: 300px;
+  display: flex;
+  align-items: center;
   background-image: url("./subfooter1.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10% 80%;
   color: black;
-  font-size: 25px;
+  min-height: 30vh;
+  font-size: 2.5vh;
 }
 #incentives {
-  padding: 40px 30px;
+  padding: 2vh 3vw;
   text-align: center;
-  padding: auto auto;
-  margin: auto auto;
 }
-
-
-/*--------------- FOOTER STYLING -----------*/
-footer {
-  background-color: #1a1b1f;
-  margin: 0px;
-}
-.footer-main .container .row {
-  display: flex;
-  padding: 20px 10%;
-  height: 300px;
-  /* font-size: 40px; */
-}
-
 
 /* --------------- EXPERIENCES STYLING ----------- */
-#facultyExperiences {
+#thirdPage {
   box-sizing: border-box;
+  min-height: 100vh;
+  padding: 5vh 0vh;
 }
-#experiencesTitle {
-  padding-left: 10%;
-  padding-top: 80px;
-  width: 70%;
-  font-size: 50px;
+#thirdPageTitle {
+  padding: 0vh 7%;
+  padding-bottom: 5vh;
+  font-size: 4vh;
   font-weight: 600;
-  padding-bottom: 50px;
 }
+
+/* ----- -SLIDING CARDS TEMPELATE----- */
 /* Slideshow container */
 .slideshow-container {
   max-width: 1600px;
@@ -267,28 +193,41 @@ footer {
   }
 }
 
-/*--------------- EXPERIENCES CARD STYLING -------------*/
+/*------- EXPERIENCES CARD STYLING --------*/
 .card-wrapper {
-  position: relative;
   display: flex;
-  min-height: 500px;
+  min-height: 70vh;
   justify-content: flex-end;
-}
-.card-right {
-  display: flex;
-  width: 80%;
-  padding: 25px;
+  padding-right: 6vw;
+  margin: 0px 10vw;
+  background-color: #1a1b1f;
   border-radius: 5px;
-  background-color: #222;
   color: #f9f9f9;
+  font-size: 1.9vh;
+  align-items: center;
 }
 .card-content-wrapper {
   width: 90%;
-  padding-right: 40px;
-  padding-left: 145px;
+  padding: 5vh 0vw;
 }
 .card-heading {
-  margin-top: 0px;
-  font-size: 45px;
+  font-size: 4.5vh;
   line-height: 1.2;
 }
+
+/*--------------- FOOTER STYLING -----------*/
+footer {
+  background-color: #1a1b1f;
+  margin: 0px;
+}
+.footer-main .container .row {
+  display: flex;
+  padding: 20px 10%;
+  height: 300px;
+  /* font-size: 40px; */
+}
+
+/* if container of x is having property display flex then we can use below properties
+for y which is present in x 
+margin-top: auto;
+margin-bottom: auto; */
