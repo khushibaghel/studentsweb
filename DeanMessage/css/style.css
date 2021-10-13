@@ -20,7 +20,7 @@
     size: 30px;
     background-image: url("../images/3.jpg");
     background-repeat: no-repeat;
-    background-size: 150% 150%;
+    background-size: 150% 230%;
     animation: image 60s infinite alternate-reverse;
   }
 
@@ -620,13 +620,11 @@
 }
 
   h1 {
-  text-align: left;
-  padding-left: 30%;
-  font-size:45px;
+  text-align: center;
+  font-size: 40px;
 }
 
   .local-wrapper {
-    /* position: relative; */
     display: flex;
     min-height: 500px;
     justify-content: center;
@@ -659,265 +657,15 @@
   }
   @media screen and (max-width: 910px) {
     .local-wrapper{
-      flex-direction: row;
+      width: 90%;
+      flex-direction: column;
+    }
+    .dean_image{
+      height: 250px;
+      width: 250px;
+      margin: 10px 0px;
     }
   }
-  /*.local-heading {
-    margin-top: 5px;
-    font-size: 35px;
-    line-height: 0.6;
-  }
-  
-  @media screen and (max-width: 1330px) {
-    .local-right{
-      width: 80%;
-    }
-  }
-
-    @media screen and (max-width: 1500px) {
-    .boxa {
-      top: 80%;
-      width: 310px;
-      left: 13%;
-    }
-    .local-content-wrapper {
-      width: 80%;
-      padding-right: 30px;
-      padding-left: 145px;
-    }
-  }
-    @media screen and (max-width: 1160px) {
-    .boxa {
-      top: 78%;
-      width: 310px;
-      left: 13%;
-    }
-    .local-content-wrapper {
-      width: 80%;
-      padding-right: 30px;
-      padding-left: 145px;
-    }
-  }
-
-  @media screen and (max-width: 1135px) {
-  
-    .local-left {
-      top: 8%;
-      left: 0%;
-    }
-    .local-right{
-      width: 50%;
-     padding: 5px;
-     justify-content: end;
-    }
-    .local-content-wrapper {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    .local-heading {
-      margin-top: 0px;
-    }
-    .boxa {
-      top: 75%;
-      width: 300px;
-      left: 0%;
-    }
-  }
-
-  @media screen and (max-width: 960px) {
-    .local-container {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    .local-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .local-left {
-      position: static;
-      width: 100%;
-      border-radius: 0px;
-      left: 7%;
-    }
-    .local-right {
-      width: 100%;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      border-radius: 0px;
-    }
-    .boxa {
-      top: 43%;
-      width: 310px;
-      left: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 890px) {
-    .local-container {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    .local-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .local-left {
-      position: static;
-      width: 100%;
-      border-radius: 0px;
-      left: 7%;
-    }
-    .local-right {
-      width: 100%;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      border-radius: 0px;
-    }
-    .boxa {
-      top: 40%;
-      width: 310px;
-      left: 50%;
-    }
-    h1{
-      font-size:30px;
-      text-align: left;
-      padding-left: 0%;
-    }
-  }
-
-  @media screen and (max-width: 660px) {
-    .local-container {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    .local-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .local-left {
-      position: static;
-      width: 100%;
-      border-radius: 0px;
-      left: 7%;
-    }
-    .local-right {
-      width: 100%;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      border-radius: 0px;
-    }
-    .boxa {
-      top: 40%;
-      width: 230px;
-      right: 0%;
-      left: 55%;
-    }
-    h1{
-      font-size:30px;
-      text-align: left;
-      padding-left: 0%;
-    }
-  }
-
-    @media screen and (max-width: 580px) {
-    .local-container {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    .local-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .local-left {
-      position: static;
-      width: 100%;
-      border-radius: 0px;
-      left: 7%;
-    }
-    .local-right {
-      width: 100%;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      border-radius: 0px;
-    }
-    .boxa {
-      top: 78%;
-      width: 230px;
-      right: 0%;
-      left: 7%;
-    }
-    h1{
-      font-size:30px;
-      text-align: left;
-      padding-left: 0%;
-    }
-  }
-
-      @media screen and (max-width: 513px) {
-    .local-container {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    .local-wrapper {
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .local-left {
-      position: static;
-      width: 100%;
-      border-radius: 0px;
-      left: 7%;
-    }
-    .local-right {
-      width: 100%;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      border-radius: 0px;
-    }
-    .boxa {
-      top: 80%;
-      width: 230px;
-      right: 0%;
-      left: 7%;
-    }
-    h1{
-      font-size:25px;
-      text-align: left;
-      padding-left: 0%;
-    }
-  }
-
-  @media screen and (max-width: 479px) {
-    .local-section {
-      padding-top: 0px;
-      padding-bottom: 0px;
-    }
-    .local-right {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-    .boxa {
-      top: 80%;
-      width: 230px;
-      right: 0%;
-      left: 5%;
-    }
-  } */
 
   .footer-main {
   padding: 92px 0;
