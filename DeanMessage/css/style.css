@@ -20,7 +20,7 @@
     size: 30px;
     background-image: url("../images/3.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 120%;
+    background-size: 150% 150%;
     animation: image 60s infinite alternate-reverse;
   }
 
@@ -626,86 +626,53 @@
 }
 
   .local-wrapper {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    /* position: relative; */
     display: flex;
     min-height: 500px;
-    -webkit-box-pack: flex-end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: flex-end;
     justify-content: center;
+    margin: 0px auto;
+    width: 75%;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 0px;
   }
   
-  .local-left {
-    position: absolute;
-    left: 14%;
-    top: 7%;
-    right: auto;
-    bottom: 0%;
-    width: 20%;
-    height: 0px;
-    min-height: 400px;
-    border-radius: 5px;
-    background-position: 69% 80%;
-    background-size: 270%;
+   .local-left {
+    margin: 0px 10px;
   }
   
   .local-right {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 75%;
-    padding: 45px;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    border-radius: 5px;
-    border: 0px solid #89CFF0;
-    background-color: white ;
-    color: black;
+    margin: 0px 10px;
+
   }
-  
-  .local-content-wrapper {
-    width: 80%;
-    padding-right: 30px;
-    padding-left: 110px;
+  @media screen and (max-width: 1400px) {
+    .local-wrapper{
+      width: 80%;
+    }
   }
-  
-  .local-heading {
+  @media screen and (max-width: 1020px) {
+    .local-wrapper{
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 910px) {
+    .local-wrapper{
+      flex-direction: row;
+    }
+  }
+  /*.local-heading {
     margin-top: 5px;
     font-size: 35px;
     line-height: 0.6;
   }
-
-  .boxa {
-  background-color:#d7e9f5;
-  width: 300px;
-  border: 0px solid #008080;
-  padding: 0px;
-  margin: 20px;
-  position: absolute;
-  left: 13%;
-  top: 85%;
-  right: auto;
-  bottom: 0%;
-  width: 20%;
-  height: 0px;
-  min-height: 117px;
-  border-radius: 5px;
-  text-align: center;
-  }
   
-  /* @media screen and (max-width: 1900px) {
-    .boxa {
-      top: 80%;
-      width: 310px;
-      left: 14%;
+  @media screen and (max-width: 1330px) {
+    .local-right{
+      width: 80%;
     }
-  } */
+  }
 
     @media screen and (max-width: 1500px) {
     .boxa {
@@ -950,7 +917,7 @@
       right: 0%;
       left: 5%;
     }
-  }
+  } */
 
   .footer-main {
   padding: 92px 0;
