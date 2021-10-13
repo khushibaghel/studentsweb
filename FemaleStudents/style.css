@@ -88,11 +88,11 @@ body {
   position: relative;
 }
 #firstPageContent {
-  height: 88vh;
+  height: 100vh;
 }
 #firstPageSpace {
   display: flex;
-  height: 75vh;
+  height: 90vh;
   align-items: flex-end;
 }
 #firstPageText {
@@ -115,7 +115,7 @@ body {
   align-items: center;
   margin: 0px 5vw;
   min-height: 80vh;
-  font-size: 2vh;
+  font-size: 2.5vh;
   position: relative;
   z-index: 2;
   background-color: white;
@@ -128,7 +128,7 @@ body {
   margin: 1.5vh 3vw;
 }
 #invitationTitle {
-  font-size: 4vh;
+  font-size: 5.5vh;
   margin-bottom: 1vh;
 }
 
@@ -162,9 +162,10 @@ body {
   background-color: white;
 }
 #thirdPageTitle {
-  padding: 0vh 7%;
+  padding-left: 25%;
   padding-bottom: 5vh;
-  font-size: 5vh;
+
+  font-size: 5.5vh;
   font-weight: 350;
 }
 
@@ -294,7 +295,7 @@ body {
     font-size: 2.9vh;
   }
   .card-wrapper {
-    padding-left: 15vw;
+    padding-left: 0vw;
   }
   #firstPageFooter {
     font-size: 1.5vw;
@@ -310,6 +311,11 @@ body {
 @media screen and (max-width: 1100px) {
   #bigText{
     font-size: 8vh;
+  }
+
+  #thirdPageTitle{
+    padding-left: 13%;
+    font-size: 5vh;
   }
   #firstPageFooter {
     font-size: 2.2vw;
@@ -336,24 +342,7 @@ body {
   }
 }
 @media screen and (max-width: 950px) {
-  .navbarLeft{
-    width: 96vw;
-  }
-  .navbarLeft .icon{
-    float: right;
-  }
-  .navbarRight{
-    display: none;
-  }
-
-  .navbarResponsive{
-    display: grid;
-    position: fixed;
-  }
-  .navRightResponsive{
-    display: grid;
-    width: 100vw;
-  }
+  
   #bigText{
     font-size: 7vh;
   }
