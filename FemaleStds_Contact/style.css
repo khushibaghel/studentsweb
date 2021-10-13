@@ -83,7 +83,12 @@ body {
 /* -------------- FIRST PAGE STYLING --------------- */
 .firstPage {
   height: 100vh;
-  background-color: white;
+  background-image: url("./Images/incentives.jpeg") no-repeat center center fixed;
+  /* background: url(images/bg.jpg) no-repeat center center fixed;  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow: hidden;
   position: relative;
 }
@@ -271,22 +276,8 @@ body {
   line-height: 1.2;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/*--------------- FOOTER STYLING -----------*/
-/* footer {
-  background-color: #1a1b1f;
-  margin: 0px;
-  position: relative;
-  z-index: 2;
-  display: none;
-}
-.footer-main .container .row {
-  display: flex;
-  padding: 20px 10%;
-  height: 300px;
-  /* font-size: 40px; *
-} */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* -------- */
+
 @media screen and (min-width: 950px) {
   .navbarLeft .icon{
     display: none;
@@ -332,10 +323,9 @@ body {
     width: 60vw;
   }
   #invitationImage {
-    margin-left: 6vw;
     border-radius: 1rem;
     width: 45vw;
-    height: 30vw;
+    height: 40vw;
   }
   #invitation {
     margin-top: 2vh;
@@ -352,12 +342,6 @@ body {
   }
   #firstPageFooter {
     font-size: 2.5vw;
-  }
-  #invitationImage {
-    margin-left: 6vw;
-    border-radius: 1rem;
-    width: 56vw;
-    height: 40vw;
   }
 }
 @media screen and (max-width: 850px) {
