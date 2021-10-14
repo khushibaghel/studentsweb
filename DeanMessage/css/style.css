@@ -645,6 +645,9 @@
     margin: 0px 10px;
 
   }
+  .dean_image{
+    border-radius: 5px;
+  }
   @media screen and (max-width: 1400px) {
     .local-wrapper{
       width: 80%;
