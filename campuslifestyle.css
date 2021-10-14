@@ -367,3 +367,21 @@ body {
         font-size: 28px;
         line-height: 36px;
       } }
+
+    #more {display: none;}
+    #dots { color:blue; }
+#myBtn {
+	background-color: #ffffff; /* Green */
+  border: none;
+  color: rgb(0, 4, 255);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#myBtn:hover {
+	background-color: #ffffff;
+	color: rgb(4, 151, 16);
+  }
