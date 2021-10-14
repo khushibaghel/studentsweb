@@ -7,8 +7,8 @@ body {
   font-weight: 300;
 
   background: #e8cbc0;
-    background: -webkit-linear-gradient(to right, #f36946bd, #fccb2acb);
-    background: linear-gradient(to right, #a0b6cd8a, #a0b6cd);
+    background: -webkit-linear-gradient(to right, #F0FFFF, #F0FFFF);
+    background: linear-gradient(to right, #F0FFFF, #F0FFFF);
     min-height: 100vh;
   
   line-height: 1.5;
