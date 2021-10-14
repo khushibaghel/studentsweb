@@ -1,15 +1,4 @@
-:root {
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  );
-}
+
 
 /* ----------------- BODY STYLING ------------------ */
 body {
@@ -21,64 +10,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* -------------- HEADER STYLING --------------- */
-.header {
-  display: flex;
-  align-items: top;
-  background-color: #f1f1f177;
-  padding: 0px 5px 0px 0px;
-  font-size: 22px;
-  -webkit-tap-highlight-color: transparent;
-  margin-bottom: 1.5px;
-}
-#iitMandiLogo {
-  height: 80px;
-  width: 90px;
-}
-#headerText {
-  margin-top: 15px;
-  margin-left: 10px;
-  font-weight: 500;
-}
-/* -------------- NAVBAR STYLING --------------- */
-/* .navbar {
-  padding: 0.5rem 10px 0.5rem 5px;
-  font-size: 17px;
-  display: flex;
-  background-color: #f1f1f177;
-  justify-content: space-between;
-}
-.navbar a {
-  float: left;
-  padding: 7px 6.5px;
-  text-decoration: none;
-}
-.navbar a:hover {
-  background-color: #ddd;
-}
-.navbarLeft {
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.navbarLeft .icon{
-  color: black;
-}
-.navbarRight a{
-  color: black;
-}
-.navbarRight {
-  display: flex;
-}
-.navbarRight .icon {
-  display: none;
-}
-.sticky {
-  z-index: 3;
-  position: fixed;
-  top: 0;
-  width: 99.2%;
-} */
 
 /* -------------- FIRST PAGE STYLING --------------- */
 .firstPage {
@@ -132,25 +63,7 @@ body {
   margin-bottom: 1vh;
 }
 
-/*--------------- INCENTIVES STYLING --------------*/
-#incentivesContainer {
-  display: flex;
-  align-items: center;
-  background-image: url("./Images/incentives.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 10% 80%;
-  color: black;
-  min-height: 30vh;
-  font-size: 2.5vh;
-  position: relative;
-  z-index: 2;
-}
-#incentives {
-  padding: 2vh 3vw;
-  text-align: center;
-}
+
 
 /* --------------- EXPERIENCES STYLING ----------- */
 #thirdPage {
@@ -271,22 +184,7 @@ body {
   line-height: 1.2;
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/*--------------- FOOTER STYLING -----------*/
-/* footer {
-  background-color: #1a1b1f;
-  margin: 0px;
-  position: relative;
-  z-index: 2;
-  display: none;
-}
-.footer-main .container .row {
-  display: flex;
-  padding: 20px 10%;
-  height: 300px;
-  /* font-size: 40px; *
-} */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 @media screen and (min-width: 950px) {
   .navbarLeft .icon{
     display: none;
@@ -383,13 +281,4 @@ body {
     font-size: 1.8vh;
   }
 }
-/* {
-  --bs-body-navbarBgColor: rgb(39, 39, 39);
-  --bs-body-invitationTitleFontSize: 35px;
-  use var(--bs-body-navbarFontSize) instead of 30px
-  
-  if container of x is having property display flex then we can use below properties
-  for y which is present in x 
-  margin-top: auto;
-  margin-bottom: auto;
-} */
+
